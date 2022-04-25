@@ -36,7 +36,7 @@ const Checkout = () => {
             address: event.target.address.value,
             phone: event.target.phone.value
         }
-        axios.post('http://localhost:5000/order', order)
+        axios.post('https://thawing-mountain-91486.herokuapp.com/order', order)
         .then(response =>{
             const {data} = response;
             if(data.insertedId){

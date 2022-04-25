@@ -6,7 +6,7 @@ const AddService = () => {
     
     const onSubmit = data => {
         console.log(data);
-        const url = `http://localhost:5000/service`;
+        const url = `https://thawing-mountain-91486.herokuapp.com/service`;
         fetch(url, {
             method: 'POST',
             headers: {

@@ -13,7 +13,7 @@ const Order = () => {
         
         const getOrders = async() =>{
             const email = user.email;
-            const url = `http://localhost:5000/order?email=${email}`;
+            const url = `https://thawing-mountain-91486.herokuapp.com/order?email=${email}`;
             try{
                 const {data} = await axiosPrivate.get(url);
                 setOrders(data);
