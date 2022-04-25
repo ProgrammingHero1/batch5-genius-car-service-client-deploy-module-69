@@ -30,9 +30,13 @@ const Order = () => {
 
     }, [user])
     return (
-        <div>
+        <div className='w-50 mx-auto'>
             <h2>Your orders: {orders.length}</h2>
-
+            {
+                orders.map(order =><div key={order._id}>
+                    <p>{order.email} : {order.service}</p>
+                </div>)
+            }
         </div>
     );
 };
