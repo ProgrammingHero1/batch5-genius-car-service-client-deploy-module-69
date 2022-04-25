@@ -12,7 +12,7 @@ const Order = () => {
     useEffect( () => {
         
         const getOrders = async() =>{
-            const email = user.email;
+            const email = user?.email;
             const url = `https://thawing-mountain-91486.herokuapp.com/order?email=${email}`;
             try{
                 const {data} = await axiosPrivate.get(url);
